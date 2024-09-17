@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    justify-content: center;
+    border: 2px double skyblue;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    border: 2px double skyblue;
+    
+}
+.flex-wrapper{
+    background-color: rgb(248, 207, 178);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.el-1{
+    background-color: gold;
+    /* height: 100px; */
+}
+.el-2{    
+    background-color: purple;
+}
+.el-3{    
+    background-color: royalblue;
+
+}
+.el-4{    
+    background-color: green;
+}
+.el-5{    
+    background-color: orange;
+}
+
+.flex-wrapper1{
+    background-color: rgb(248, 207, 178);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.el-6{
+    background-color: gold;
+}
+.el-7{    background-color: purple;
+}
+.el-8{    background-color: royalblue;
+}
+.el-9{    background-color: green;
+}
+.el-10{    background-color: orange;
+}
+
+.flex-wrapper2{
+    background-color: rgb(248, 207, 178);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+.el-11{
+    background-color: gold;
+}
+.el-12{    background-color: purple;
+}
+.el-13{    background-color: royalblue;
+}
+.el-14{    background-color: green;
+}
+.el-15{    background-color: orange;
+}
+
+.main-wrapper{
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.flex-wrapper3{
+    background-color: rgb(248, 207, 178);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content:center;
+
+}
+.el-21{
+    background-color: gold;
+}
+.el-22{    background-color: purple;
+}
+.el-23{    background-color: royalblue;
+}
+.el-24{    background-color: green;
+}
+.el-25{    background-color: orange;
+}

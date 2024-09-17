@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.ham{
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media screen and (max-width:575px) {
+    .ham{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
+@media screen and (max-width:1024px) {
+    .ham{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
+
+.slide-wrapper a, p{
+    color: #333;
+}
+.slide-wrapper{
+    display: flex;
+    gap: 10px;
+    transform: translateX(-70px);
+    width: 130px;
+    transition: all 2s ease-in-out;
+}
+.slide-wrapper:hover{
+    transform: translateX(0);
+}
+
+.slide-wrapper ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.slide-wrapper ul li{
+    border-bottom: 1px solid grey;
+    margin-left: 10px;
+}
+.slide-wrapper ul li:hover{
+    transform: translateY(16px);
+    transform: scale(1.1);
+}
+
+.keyframes{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    /* animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+    animation: move 8s ease-in-out infinite ;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(200px);
+        background-color: blue;
+    }
+    50%{
+        transform: translate(200px,200px);
+        background-color: gold;
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: translateX(0,200px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}

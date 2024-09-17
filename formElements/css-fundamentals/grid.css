@@ -1,0 +1,72 @@
+*{
+    /* padding: 20px;
+    margin: 20px; */
+}
+div{
+    border: 1px solid black;
+    justify-content: center;
+    /* align-items: center; */
+}
+header{
+    display: grid;
+    justify-content: center;
+    border: 2px double skyblue;
+}
+footer{
+    display: grid;
+    justify-content: center;
+    border: 2px double skyblue;
+}
+.grid-wrapper{
+    background-color: rgb(248, 207, 178);
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px 100px 150px;
+    grid-template-rows: 200px 150px 70px;
+    column-gap: 30px;
+    row-gap: 5px;
+}
+.grid-wrapper2{
+    background-color: rgb(248, 207, 178);
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr auto; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    /* grid-template-rows: 2fr auto 1fr; */
+    column-gap: 30px;
+    row-gap: 5px;
+}
+
+.el-1{
+    background-color: gold;
+    /* height: 100px; */
+}
+.el-2{    
+    background-color: purple;
+
+}
+.el-3{    
+    background-color: royalblue;
+
+}
+.el-4{    
+    background-color: green;
+}
+.el-5{    
+    background-color: orange;
+}
+.el-6{
+    background-color: gold;
+}
+.el-7{    background-color: purple;
+}
+.el-8{    background-color: royalblue;
+}
+.el-9{    background-color: rgb(58, 198, 253);
+}
+.el-10{    background-color: orange;
+}

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+body,html {
+  color: black;
+  font-family: sans-serif;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+
+}
+main {
+  position: relative;
+  /* display: flex; */
+  flex: 2;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 10px; */
+}
+
+h1 {
+  color: darkblue;
+}
+header p {
+  color: tomato;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2{
+  font-size: 100px;
+  /* text-align: center; */
+  color: chocolate;
+}
+nav a{
+  font-size: 20px;
+}
+nav{
+  border: 1px solid red;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+div{
+  padding: 10px;
+}
+.us-box{
+ padding: 20px;
+ display: flex;
+}
+.us2-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  width: 100%;
+  height: 100%;
+  padding: 0px 20px;
+  margin: 0px 20px;
+}
+.img-center{
+  width: 300px;
+  height: auto;
+}
+.main-header {
+  background-color: #f3ebeb;
+  border-bottom: 3px solid grey;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.first-header {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: slateblue;
+}
+a:hover {
+  color: crimson;
+  text-decoration: underline wavy;
+}
+.top-section{
+  margin: 10px  0px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.centeredList {
+  color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.roman-list {
+  list-style-type: upper-roman; /* Use upper-roman for uppercase Roman numerals */
+  padding-left: 20px; /* Add some left padding for better alignment */
+}
+
+.question-main{
+  border-bottom: 3px solid blue;
+  border-top: 3px solid blue;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  background-color: palegoldenrod;
+  margin: 20px 0px;
+}
+.question-wrapper{
+  width: 60%;
+  padding: 0 10px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.question-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.smImg{
+  width: 100px;
+  height: auto;
+}
+.LRspace{
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+.layout-wrapper{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+fieldset{
+  
+  justify-items: center;
+  align-items: center;
+}
+#cssC1body {
+  background-color: rgb(148, 188, 247);
+  border: #fd7c03 solid 5px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+#cssC1h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  color: crimson;
+}
+#cssC1img {
+  border: none;
+  width: 1200px;
+  height: auto;
+}
+#cssC1smImg {
+  height: 100px;
+  width: 100px;
+  margin: 20px 0px 0px 40px;
+}
+#cssC1a {
+  font-size: 40px;
+  text-decoration: underline hsl(from color h s l);
+  padding: 10px;
+}
+#cssC1main {
+  display: flex;
+  justify-content: center;
+}
+#cssC1center {
+  padding: 10px;
+}
+
+#cssC1header {
+  display: block;
+  align-content: center;
+}
+
+/* Style for the h2 element */
+.animated-heading {
+  font-size: 2.5em; /* Initial font size */
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Margin around the heading */
+  animation: pulseColor 3s infinite, scaleUp 3s infinite;
+  color: #3498db; /* Initial color */
+  font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Define the pulse color animation */
+@keyframes pulseColor {
+  0% {
+    color: #3498db; /* Initial color */
+  }
+  50% {
+    color: #fd7c03; /* Color changes at mid-animation */
+  }
+  100% {
+    color: #0098fd; /* Back to initial color */
+  }
+}
+
+/* Define the scale up animation */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.05); /* Initial scale */
+  }
+  50% {
+    transform: scale(1); /* Enlarges text size */
+  }
+  100% {
+    transform: scale(1); /* Back to initial scale */
+  }
+}
+
+/* General styles for the list */
+ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Styles for list items with hover effect */
+.cool-hover {
+  margin: 10px 20px; /* Adds space around items */
+  padding: 10px 20px; /* Adds padding inside items */
+  font-size: 1.5em; /* Increases font size */
+  color: #3498db; /* Initial text color */
+  background-color: #f0f0f0; /* Initial background color */
+  border-radius: 5px; /* Adds rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Hover effect styles */
+.cool-hover:hover {
+  transform: scale(1.1); /* Slightly enlarges the item */
+  color: #ffffff; /* Changes text color */
+  background-color: #3498db; /* Changes background color */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Adds glowing shadow */
+}
