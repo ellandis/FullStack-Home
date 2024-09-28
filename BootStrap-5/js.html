@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="container m-4">
+    <!-- <div class="container m-4">
       <div class="dropdown">
         <button
           class="btn btn-primary dropdown-toggle"
@@ -61,6 +61,39 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <!-- !Carousel -->
+    <div class="container m-4">
+      <div class="carousel slide" id="myslide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/7/7b/Josh_Brolin_as_Thanos.jpeg"
+              class="d-block w-100" style="height: 500px; width: 500px;"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://preview.redd.it/thoughts-on-nolans-bane-v0-fw0od0zw6y9b1.png?width=640&crop=smart&auto=webp&s=80c8d0d901a1aab006252035e0feb5ad65acef3a"
+              class="d-block w-100" style="height: 500px; width: 500px;"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLg6JNKL3cZxeOj-F7SW7gLj9x7iPVm4yGTw&s"
+              class="d-block w-100" style="height: 500px; width: 500px;"
+            />
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#myslide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Prev</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#myslide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -70,7 +103,7 @@
     <script>
       const myId = document.querySelector("#myModal");
       const myModal = new bootstrap.Modal(myId);
-      myModal.show()
+      myModal.show();
     </script>
   </body>
 </html>
