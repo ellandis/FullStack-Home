@@ -39,3 +39,31 @@
 .carousel-item{
     max-height: calc(100vh-88px);
 }
+.bi{
+    font-size: 2rem;
+}
+.smImg{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+footer i{
+    font-size: 2rem;
+    color: white;
+    margin: 0.2rem
+}
+.up-btn{
+    color: white;
+    background-color: var(--red);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
