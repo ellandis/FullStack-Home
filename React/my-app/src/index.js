@@ -22,7 +22,7 @@ const tourData = [
     title: "Testing Gamma",
     desc: "Critical testing phase to identify bugs and issues.",
     img: "https://southpacific-vacations.com/wp-content/uploads/2011/03/BoraBoraVacations-708x300.jpg",
-    tourIsUp: "TOUR IS UP"
+    tourIsUp: "TOUR IS OUT"
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const tourData = [
     title: "Review Epsilon",
     desc: "Gathering feedback and making necessary improvements.",
     img: "https://www.hawaiitours.com/wp-content/uploads/2019/02/Na-Pali-Coast-Tunnels-and-Kee-Beach-Aerial-Helicopter-Kauai-shutterstock_1053409016-1200x600.jpg?x50639",
-    tourIsUp: "TOUR IS UP"
+    tourIsUp: "TOUR IS OUT"
   },
 ];
 
@@ -88,7 +88,7 @@ const Tour = ({tourObj}) => {
   const {img,title,desc,price, tourIsUp} = tourObj
   console.log(tourObj);
   return (
-    <div className="tourWrapper">
+    <div className={`tourWrapper ${tourIsUp ? "grey" : ""} `}>
       <img src={img} alt="" />
       <div className="tourBottom">
         <h2>{title}</h2>
