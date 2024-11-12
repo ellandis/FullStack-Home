@@ -1,6 +1,6 @@
 const Footer =()=>{
     return(
-        <div>Footer</div>
+        <div className="footerWrapper">Total Items: x Completed Item: X</div>
     )
 };
 
