@@ -6,10 +6,10 @@ const Main = ({ items, handleAddItems, onDeleteItem, handleDoneItem }) => {
   const [sortBy, setSortBy] = useState("input");
   let sortedItems;
 
-  if(sortBy == "input"){
+  if(sortBy === "input"){
     sortedItems = items;
   }
-  if(sortBy == "packed"){
+  if(sortBy === "packed"){
     sortedItems = items.slice().sort((a,b) => Number(a.packed) - Number(b.packed));
   }
 
