@@ -2,13 +2,13 @@ import shoppingList from "../data/data";
 import List from "../component/List";
 import Form from "./Form";
 
-const Main = () => {
+const Main = ({items, handleAddItems, onDeleteItem}) => {
     return(
         <div>
-            <Form/>
+            <Form  handleAddItems={handleAddItems}  />
         <ul className="mainWrapper">
-            {shoppingList.map( (item) => (
-                <List item={item} key={item.id}/>
+            {items.map( (item) => (
+                <List item={item} key={item.id} onDeleteItem={onDeleteItem} />
             ))}
         </ul>
             </div>
