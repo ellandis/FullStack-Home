@@ -1,6 +1,5 @@
 import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/Home.jsx";
-import Instructions from "./pages/Instructors.jsx";
 import Contact from "./pages/Contacts.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Footer from "./components/Footer.jsx";
