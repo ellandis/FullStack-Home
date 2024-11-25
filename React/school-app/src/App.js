@@ -1,10 +1,10 @@
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Personnel from "./pages/Personnel";
-import NotFound from "./pages/NotFound";
+// import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PersonnelDetail from "./pages/PersonnelDetail";
 import Paths from "./pages/Paths";
 import Frontend from "./pages/Frontend";
