@@ -20,6 +20,9 @@ const Navbar = () => {
         <li>
           <NavLink to="/contact">Contacts</NavLink>
         </li>
+        <li>
+          <NavLink to="/paths">Paths</NavLink>
+        </li>
       </ul>
         
     </nav>
