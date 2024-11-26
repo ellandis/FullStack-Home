@@ -10,4 +10,4 @@ const PrivateRouter = () => {
   )
 }
 
-export default PrivateRouter
+export default PrivateRouter;
