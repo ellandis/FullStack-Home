@@ -3,11 +3,13 @@ import "./Home.css";
 import axios from "axios";
 import Card from "../../components/card/Card";
 import Header from "../../components/header/Header";
+import home from "../../assets/istock.jpg"
 
 const Home = () => {
-  const [query, setQuery] = useState("egg");
-  const [selectedMeal, setSelectedMeal] = useState("breakfast");
-  const [recipes, setRecipes] = useState([]);
+  const [query, setQuery] = useState("");
+  const [selectedMeal, setSelectedMeal] = useState("");
+  const [recipes, setRecipes] = useState(null);
+  const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack", "TeaTime"];
 
   const appId = process.env.REACT_APP_API_ID;
   const appKey = process.env.REACT_APP_API_KEY;
@@ -22,16 +24,26 @@ const Home = () => {
       console.log(error);
     }
   };
-  console.log(recipes);
+  // console.log(recipes);
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <div>
-      <Header query={query} setQuery={setQuery} />
-      <Card />
+      <Header
+        query={query}
+        setQuery={setQuery}
+        selectedMeal={selectedMeal}
+        setSelectedMeal={setSelectedMeal}
+        mealTypes={mealTypes}
+        getData={getData}
+     />
+     {!recipes && <img className="homeImg" src={home} alt="home" />}
+     {recipes?.length === 0 && <h1>Ewww who eats that try something else</h1>}
+     {recipes?.length > 0 && <Card recipes={recipes} />}
+      
     </div>
   );
 };
