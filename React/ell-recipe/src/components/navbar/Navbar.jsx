@@ -3,11 +3,16 @@ import "./Navbar.css";
 import {Link,NavLink  } from "react-router-dom";
 
 const Navbar = () => {
-  const [show,setShow] = useState(true);
-
+  const [show,setShow] = useState(false);
+  const user = localStorage.getItem("user");
+  
   const toggleMenu = ()=>{
     setShow(!show);
   }
+  const setUser =()=>{
+     
+  } ;
+  
   return (
     <nav className="navWrapper">
       <div>
@@ -19,7 +24,7 @@ const Navbar = () => {
       <div className={show ? "linkWrapper show" : "linkWrapper"}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="about">About</NavLink>
-        <NavLink to="login">Login</NavLink>
+        <NavLink onClick={setUser} to="login">{user ? "Logout" : "Login"}</NavLink>
       </div>
       <div className="burgerMenu" onClick={toggleMenu}>
         &#9776;
