@@ -10,7 +10,8 @@ const Navbar = () => {
     setShow(!show);
   }
   const setUser =()=>{
-     
+    localStorage.removeItem("user");
+    
   } ;
   
   return (
